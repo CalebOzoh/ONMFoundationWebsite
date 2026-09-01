@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | Obiianuju-Nnenna Media Foundation</title>
+<meta name="description" content="Get in touch with the Obiianuju-Nnenna Media Foundation for general enquiries, partnerships, media, and our Abuja office address.">
+<link rel="icon" href="images/onmfoundation_logo.png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.info-block{display:flex;gap:16px;padding:22px 0;border-bottom:1px solid var(--navy-08)}
+.info-block h4{font-family:var(--display);font-size:.95rem}
+.info-block p{margin-top:4px;color:var(--navy-70);font-size:.92rem}
+.map-frame{aspect-ratio:16/10;border:1px solid var(--navy-08);margin-top:30px}
+.map-frame iframe{width:100%;height:100%;border:0}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand"><img src="images/onmfoundation_logo.png" alt="Obiianuju-Nnenna Media Foundation"> ONM Foundation</a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="about.html">About Us</a>
+      <a href="our-work.html">Our Work</a>
+      <a href="impact.html">Impact</a>
+      <a href="resilient-women.html">The Resilient Woman</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="news.html">News &amp; Media</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="get-involved.html#donate" class="btn btn-outline-light btn-sm">Donate</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-header">
+    <canvas class="ambient-canvas" data-theme="navy" aria-hidden="true"></canvas>
+    <div class="page-header-inner">
+      <span class="crumb">Contact Us</span>
+      <h1>Let's talk.</h1>
+      <p>Whether it is a general enquiry, a partnership, a media request or a programme question, we would love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <form data-static-form>
+          <div class="form-grid">
+            <div class="field"><label for="cName">Full Name</label><input id="cName" required></div>
+            <div class="field"><label for="cEmail">Email Address</label><input id="cEmail" type="email" required></div>
+            <div class="field full">
+              <label for="cReason">Reason for Enquiry</label>
+              <select id="cReason" required>
+                <option value="">Select an option</option>
+                <option>General Enquiry</option>
+                <option>Partnership Enquiry</option>
+                <option>Media Enquiry</option>
+                <option>Programme Enquiry</option>
+                <option>The Wellness Chronicles</option>
+              </select>
+            </div>
+            <div class="field full"><label for="cMsg">Message</label><textarea id="cMsg" rows="6" required></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-pink" style="margin-top:22px">Send Message</button>
+          <p class="form-note" style="margin-top:14px;font-size:.88rem"></p>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <div class="info-block">
+          <div>
+            <h4>Our Office</h4>
+            <p>Karu-Jikwoyi, Abuja, Nigeria</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:info@onmfoundation.org">info@onmfoundation.org</a> for general enquiries<br>
+            <a href="mailto:admin@onmfoundation.org">admin@onmfoundation.org</a> for partnerships and administration</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+2347082164544">(+234) 708 2164 544</a></p>
+          </div>
+        </div>
+        <div class="info-block" style="border-bottom:none">
+          <div>
+            <h4>Find Us Online</h4>
+            <div class="handle-row">
+              <a class="handle handle-wa" href="https://chat.whatsapp.com/E9bC8LtakeX8GZGqpjYWFS" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.36.66 4.56 1.8 6.44L4 29l7.72-1.75a11.9 11.9 0 0 0 4.3.8h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm7.02 17.14c-.3.85-1.72 1.62-2.38 1.7-.6.08-1.36.11-2.2-.14-.5-.15-1.15-.36-1.98-.71-3.48-1.5-5.75-5.02-5.92-5.25-.17-.23-1.42-1.9-1.42-3.62 0-1.72.9-2.56 1.22-2.92.32-.35.7-.44.93-.44.23 0 .47.002.67.01.22.01.5-.08.79.6.3.71 1 2.44 1.09 2.62.09.18.15.4.03.63-.12.23-.18.37-.36.57-.18.2-.38.44-.55.6-.18.16-.37.34-.16.68.21.34.94 1.55 2.02 2.51 1.39 1.24 2.56 1.62 2.9 1.8.34.18.54.15.74-.09.2-.24.86-1 1.09-1.35.23-.34.46-.28.77-.17.32.12 2.02.95 2.37 1.13.35.17.58.26.66.4.1.14.1.79-.2 1.65z"/></svg> WhatsApp Community</a>
+              <a class="handle" href="https://www.instagram.com/riamagazineafrica/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.67 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.71 2.13-1.38.67-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.71-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg> @riamagazineafrica</a>
+              <a class="handle" href="https://www.instagram.com/theresilientwomanafrica?igsi=MWZzMzFoYjhxZ3BucA==&amp;utm_source=ig_contact_invite" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.67 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.71 2.13-1.38.67-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.71-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg> @theresilientwomanafrica</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-frame">
+          <iframe title="Office location, Karu-Jikwoyi, Abuja" loading="lazy" src="https://www.google.com/maps?q=Karu-Jikwoyi,+Abuja,+Nigeria&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="images/onmfoundation_logo.png" alt="Obiianuju-Nnenna Media Foundation">
+      <p>Building women. Strengthening communities. Creating sustainable impact across Nigeria and beyond.</p>
+      <div class="footer-social" aria-label="Social media">
+        <a class="social-wa" href="https://chat.whatsapp.com/E9bC8LtakeX8GZGqpjYWFS" target="_blank" rel="noopener" aria-label="Join our WhatsApp community"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.36.66 4.56 1.8 6.44L4 29l7.72-1.75a11.9 11.9 0 0 0 4.3.8h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm7.02 17.14c-.3.85-1.72 1.62-2.38 1.7-.6.08-1.36.11-2.2-.14-.5-.15-1.15-.36-1.98-.71-3.48-1.5-5.75-5.02-5.92-5.25-.17-.23-1.42-1.9-1.42-3.62 0-1.72.9-2.56 1.22-2.92.32-.35.7-.44.93-.44.23 0 .47.002.67.01.22.01.5-.08.79.6.3.71 1 2.44 1.09 2.62.09.18.15.4.03.63-.12.23-.18.37-.36.57-.18.2-.38.44-.55.6-.18.16-.37.34-.16.68.21.34.94 1.55 2.02 2.51 1.39 1.24 2.56 1.62 2.9 1.8.34.18.54.15.74-.09.2-.24.86-1 1.09-1.35.23-.34.46-.28.77-.17.32.12 2.02.95 2.37 1.13.35.17.58.26.66.4.1.14.1.79-.2 1.65z"/></svg></a>
+        <a class="social-ig" href="https://www.instagram.com/riamagazineafrica/" target="_blank" rel="noopener" aria-label="RIA Magazine Africa on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.67 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.71 2.13-1.38.67-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.71-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg></a>
+        <a class="social-ig" href="https://www.instagram.com/theresilientwomanafrica?igsi=MWZzMzFoYjhxZ3BucA==&amp;utm_source=ig_contact_invite" target="_blank" rel="noopener" aria-label="The Resilient Woman Africa on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.67 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.71 2.13-1.38.67-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.71-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="our-work.html">Our Work</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="resilient-women.html">The Resilient Woman</a></li>
+        <li><a href="news.html">News &amp; Media</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Get Involved</h5>
+      <ul>
+        <li><a href="get-involved.html#donate">Donate</a></li>
+        <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+        <li><a href="get-involved.html#partner">Partner With Us</a></li>
+        <li><a href="resilient-women.html#community">Join the Community</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li>Karu-Jikwoyi, Abuja, Nigeria</li>
+        <li><a href="mailto:info@onmfoundation.org">info@onmfoundation.org</a></li>
+        <li><a href="mailto:admin@onmfoundation.org">admin@onmfoundation.org</a></li>
+        <li><a href="tel:+2347082164544">(+234) 708 2164 544</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Obiianuju-Nnenna Media Foundation. All rights reserved.</span>
+    <span>Registered nonprofit, Federal Republic of Nigeria</span>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar">
+  <a href="get-involved.html#donate" class="btn btn-pink btn-sm">Donate</a>
+  <a href="resilient-women.html#community" class="btn btn-outline btn-sm" style="color:#fff;border-color:rgba(255,255,255,.4)">Join</a>
+  <a href="resilient-women.html#register" class="btn btn-navy btn-sm" style="background:var(--yellow);color:var(--navy)">Register</a>
+</div>
+
+<a class="whatsapp-float" href="https://chat.whatsapp.com/E9bC8LtakeX8GZGqpjYWFS" target="_blank" rel="noopener" aria-label="Chat with the Foundation on WhatsApp">
+  <svg fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.36.66 4.56 1.8 6.44L4 29l7.72-1.75a11.9 11.9 0 0 0 4.3.8h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm7.02 17.14c-.3.85-1.72 1.62-2.38 1.7-.6.08-1.36.11-2.2-.14-.5-.15-1.15-.36-1.98-.71-3.48-1.5-5.75-5.02-5.92-5.25-.17-.23-1.42-1.9-1.42-3.62 0-1.72.9-2.56 1.22-2.92.32-.35.7-.44.93-.44.23 0 .47.002.67.01.22.01.5-.08.79.6.3.71 1 2.44 1.09 2.62.09.18.15.4.03.63-.12.23-.18.37-.36.57-.18.2-.38.44-.55.6-.18.16-.37.34-.16.68.21.34.94 1.55 2.02 2.51 1.39 1.24 2.56 1.62 2.9 1.8.34.18.54.15.74-.09.2-.24.86-1 1.09-1.35.23-.34.46-.28.77-.17.32.12 2.02.95 2.37 1.13.35.17.58.26.66.4.1.14.1.79-.2 1.65z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+<script src="js/ambient-bg.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* The Resilient Woman Conference. Dress code: shades of pink and yellow. */
+:root{
+  --rw-pink:#FC3665;
+  --rw-pink-deep:#C71C4A;
+  --rw-yellow:#F4B73A;
+  --rw-cream:#FFF6E9;
+}
+
+.rw-header{background:transparent}
+.rw-header.is-scrolled{background:rgba(255,246,233,.94)}
+.rw-header:not(.is-scrolled) .brand,
+.rw-header:not(.is-scrolled) .main-nav a{color:#fff}
+.rw-header.is-scrolled .brand,
+.rw-header.is-scrolled .main-nav a{color:var(--navy)}
+.rw-header .brand img{border-radius:50%;height:46px;width:46px;object-fit:cover;border:2px solid var(--rw-yellow)}
+
+.rw-hero{
+  position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;
+  overflow:hidden;color:#fff;
+  background:linear-gradient(155deg, var(--rw-pink-deep) 0%, var(--rw-pink) 46%, var(--rw-yellow) 130%);
+}
+.rw-hero .ambient-canvas{opacity:.85}
+.rw-hero-inner{position:relative;z-index:2;max-width:900px;padding:170px var(--edge) 80px}
+.rw-hero-logo{width:96px;height:96px;border-radius:50%;border:3px solid #fff;object-fit:cover;margin:0 auto 26px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.rw-hero h1{font-size:clamp(2.6rem,7vw,5.4rem);line-height:.98}
+.rw-hero .theme-line{display:block;margin-top:18px;font-family:var(--display);font-weight:500;font-size:clamp(1.1rem,2.4vw,1.5rem);letter-spacing:.04em}
+.rw-hero .meta-line{margin-top:22px;font-family:var(--display);font-size:.95rem;letter-spacing:.06em;color:rgba(255,255,255,.9)}
+.rw-hero p.lede{margin-top:22px;max-width:56ch;margin-left:auto;margin-right:auto;color:rgba(255,255,255,.92);font-size:1.05rem}
+.rw-hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+
+/* countdown */
+.countdown{
+  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:44px;position:relative;z-index:2;
+}
+.cd-unit{
+  background:rgba(255,255,255,.14);backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.35);
+  min-width:90px;padding:18px 10px;text-align:center;
+}
+.cd-num{font-family:var(--display);font-weight:700;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1;font-variant-numeric:tabular-nums}
+.cd-label{margin-top:6px;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+
+/* sections */
+.rw-eyebrow{color:var(--rw-pink-deep)}
+.section-rw-cream{background:var(--rw-cream)}
+
+.attend-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.attend-list li{position:relative;padding-left:26px;margin-bottom:14px;font-size:.98rem;color:var(--navy-70)}
+.attend-list li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--rw-pink)}
+@media(max-width:800px){.attend-grid{grid-template-columns:1fr;gap:30px}}
+
+/* speakers: sliding carousel */
+.spk-carousel{position:relative}
+.spk-viewport{overflow:hidden;padding:4px}
+.spk-track{display:flex;gap:26px;transition:transform .65s var(--ease);will-change:transform}
+.speaker{
+  background:#fff;border:1px solid var(--navy-08);
+  flex:0 0 calc((100% - 52px)/3);display:flex;flex-direction:column;
+}
+.speaker-photo{aspect-ratio:1/1;overflow:hidden;background:var(--rw-cream)}
+.speaker-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.speaker:hover .speaker-photo img{transform:scale(1.05)}
+.speaker-body{padding:28px;display:flex;flex-direction:column;flex:1}
+.speaker-body h3{font-size:1.18rem}
+.speaker-role{margin-top:5px;font-family:var(--display);font-size:.8rem;color:var(--rw-pink-deep);letter-spacing:.02em;line-height:1.45}
+.speaker-bio{margin-top:16px;font-size:.88rem;color:var(--navy-70);line-height:1.7;flex:1}
+.speaker-bio.clamped{max-height:8.5em;overflow:hidden;position:relative}
+.speaker-bio.clamped::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:3em;
+  background:linear-gradient(180deg,rgba(255,255,255,0),#fff 85%);
+}
+.speaker-toggle{
+  margin-top:16px;align-self:flex-start;font-family:var(--display);font-weight:600;
+  font-size:.8rem;color:var(--rw-pink-deep);border-bottom:1.5px solid var(--rw-pink);padding-bottom:2px;
+}
+.speaker-toggle:hover{color:var(--rw-pink)}
+
+.spk-controls{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:32px;flex-wrap:wrap}
+.spk-arrows{display:flex;gap:10px}
+.spk-arrow{
+  width:50px;height:50px;border:1.5px solid var(--rw-pink);color:var(--rw-pink-deep);
+  display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;
+  transition:background .3s var(--ease), color .3s var(--ease), opacity .3s ease;
+}
+.spk-arrow:hover:not([disabled]){background:var(--rw-pink);color:#fff}
+.spk-arrow[disabled]{opacity:.28;cursor:not-allowed}
+.spk-dots{display:flex;gap:9px;align-items:center}
+.spk-dot{width:10px;height:10px;border-radius:50%;background:var(--navy-08);transition:background .3s var(--ease), width .3s var(--ease)}
+.spk-dot.is-active{background:var(--rw-pink);width:30px;border-radius:6px}
+.spk-hint{font-size:.82rem;color:var(--navy-70)}
+
+@media(max-width:1000px){.speaker{flex:0 0 calc((100% - 26px)/2)}}
+@media(max-width:680px){.speaker{flex:0 0 100%}.spk-track{gap:18px}}
+
+/* experience village */
+.village-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--navy-08)}
+.village-card{background:#fff;padding:32px 26px}
+.village-card h4{font-family:var(--display);color:var(--rw-pink-deep);font-size:1rem}
+.village-card p{margin-top:8px;font-size:.86rem;color:var(--navy-70)}
+@media(max-width:800px){.village-grid{grid-template-columns:1fr 1fr}}
+
+/* tiers / registration */
+.rw-tier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(216px,1fr));gap:0;border:1px solid var(--navy-08)}
+.rw-tier{padding:36px 28px;border-right:1px solid var(--navy-08);border-bottom:1px solid var(--navy-08);display:flex;flex-direction:column}
+.rw-tier.featured{background:linear-gradient(165deg,var(--rw-pink) 0%, var(--rw-pink-deep) 100%);color:#fff}
+.rw-tier-tag{font-family:var(--display);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rw-pink-deep)}
+.rw-tier.featured .rw-tier-tag{color:var(--rw-yellow)}
+.rw-tier h3{margin-top:12px;font-size:1.4rem}
+.rw-tier .price{margin-top:14px;font-family:var(--display);font-weight:700;font-size:1.85rem;line-height:1.15}
+.rw-tier .price small{display:block;margin-top:4px;font-size:.76rem;font-weight:500;opacity:.72;letter-spacing:.02em}
+.rw-tier ul{margin-top:20px;flex:1}
+.rw-tier li{position:relative;padding-left:22px;margin-bottom:10px;font-size:.9rem}
+.rw-tier li::before{content:"✓";position:absolute;left:0;top:0;font-weight:700;color:var(--rw-pink-deep)}
+.rw-tier.featured li::before{color:var(--rw-yellow)}
+.rw-tier .btn{margin-top:24px;width:100%}
+@media(max-width:900px){.rw-tier{border-right:none}}
+
+.reg-tabs{display:flex;gap:2px;background:var(--navy-08);margin-bottom:0;flex-wrap:wrap}
+.reg-tab{flex:1;min-width:150px;padding:18px;text-align:center;font-family:var(--display);font-weight:600;font-size:.9rem;background:#fff;color:var(--navy-70)}
+.reg-tab.is-active{background:var(--rw-pink);color:#fff}
+.reg-panel{display:none;padding:clamp(24px,4vw,44px);border:1px solid var(--navy-08);border-top:none;background:#fff}
+.reg-panel.is-active{display:block}
+
+/* faq */
+.faq-item{border-bottom:1px solid var(--navy-08)}
+.faq-q{width:100%;text-align:left;padding:22px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--display);font-weight:600;font-size:1rem}
+.faq-q .plus{transition:transform .3s ease;color:var(--rw-pink-deep);font-size:1.3rem}
+.faq-item.is-open .faq-q .plus{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-a p{padding-bottom:22px;color:var(--navy-70);font-size:.92rem;max-width:70ch}
+
+.dress-strip{
+  background:linear-gradient(90deg, var(--rw-pink) 0%, var(--rw-yellow) 100%);
+  padding:30px var(--edge);text-align:center;color:#fff;
+  font-family:var(--display);letter-spacing:.03em;
+}
+
+/* payment strip inside each registration panel */
+.pay-strip{
+  margin-top:26px;padding:26px;background:var(--rw-cream);
+  display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;
+}
+.pay-strip div{max-width:52ch}
+.pay-strip strong{font-family:var(--display);font-size:1.05rem}
+.pay-strip p{margin-top:6px;font-size:.88rem;color:var(--navy-70)}
+
+/* conference contact handles */
+.rw-handles{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;justify-content:center}
