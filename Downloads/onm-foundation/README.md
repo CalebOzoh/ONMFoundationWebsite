@@ -13,15 +13,23 @@ exactly, including the intentional typos in the conference logo and flyer filena
 ```
 /images
 ├── onmfoundation_logo.png                    main Foundation logo
-├── hero_onmfoundation.jpg                    homepage hero background  ← NEW
+├── hero_onmfoundation.jpg                    homepage hero background
+├── about_us_page_hero.jpg                    About page header       ← NEW
+├── our_work_page_hero.jpg                    Our Work page header    ← NEW
+├── Impact_image.jpg                          Impact page header      ← NEW
+├── get_involved.jpg                          Get Involved header     ← NEW
+├── news_and_media_page.jpg                   News & Media header     ← NEW
+├── contact_page.webp                         Contact page header     ← NEW
 ├── mama_nnena.png                            Mama Nnenna (Our Story + homepage story card)
 ├── riamagazinelogo.jpg                       RIA Magazine Africa logo  ← NEW
 ├── board/
 │   ├── obianujuasika.jpg
 │   ├── evaristasika.jpg
-│   └── emmanuelasika.png
+│   ├── emmanuelasika.png
+│   └── joanaidakwo.jpg                       Dr. Joana Idakwo        ← NEW
 ├── team/
-│   └── vivianachu.jpg
+│   ├── vivianachu.jpg
+│   └── Oriyomi-Olowolagba.jpg                                        ← NEW
 ├── news/                                     ← NEW folder
 │   ├── omn_Foundation_GSS_Karu.webp          menstrual hygiene article thumbnail
 │   └── OMN_TRAINS_DIGITAL_LITERACY.webp      digital literacy article thumbnail
@@ -107,7 +115,7 @@ across verbatim.
 8. RIA Magazine placeholders now use `images/riamagazinelogo.jpg`.
 9. The Wellness Chronicles appears as an upcoming event for 1 November 2026 at 5:00 PM.
 10. Conference ticket tiers are Online ₦5,000, Regular ₦15,000, Individual VIP ₦35,000,
-    Vendors ₦50,000 and Table for 5 ₦300,000. Every "Make Purchase" button points to
+    and Vendors ₦50,000. Every "Make Purchase" button points to
     `https://selar.com/033882d1a2`.
 11. Four new speakers have been added and all six now sit in a sliding carousel with
     arrows, dots, swipe support and expandable bios.
