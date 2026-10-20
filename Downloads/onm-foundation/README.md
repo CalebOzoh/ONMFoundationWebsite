@@ -114,8 +114,9 @@ across verbatim.
    gradient) instead of the old "W" and "IG" initials.
 8. RIA Magazine placeholders now use `images/riamagazinelogo.jpg`.
 9. The Wellness Chronicles appears as an upcoming event for 1 November 2026 at 5:00 PM.
-10. Conference ticket tiers are Online ₦5,000, Regular ₦15,000, Individual VIP ₦35,000,
-    and Vendors ₦50,000. Every "Make Purchase" button points to
+10. The conference runs Friday 30 October to Sunday 1 November 2026. Days 1 and 2 are
+    virtual; Day 3 is in person at BodyRox Studio (Tuff House), Wuse 2, Abuja. Admission
+    is free for attendees and vendors. Every "Register Free" button points to
     `https://selar.com/033882d1a2`.
 11. Four new speakers have been added and all six now sit in a sliding carousel with
     arrows, dots, swipe support and expandable bios.
@@ -201,3 +202,20 @@ points at `https://open.spotify.com/` for now. Once your playlist is live, updat
 `SPOTIFY_PAGE` wherever it appears: the homepage Watch & Listen card and the playlist
 section on `news.html`. A find-and-replace on `https://open.spotify.com/` across both
 files will catch all of them.
+
+
+## 11. Conference details (updated 20 October 2026)
+
+- **Dates:** Friday 30 October to Sunday 1 November 2026
+- **Day 1, Fri 30 Oct:** virtual
+- **Day 2, Sat 31 Oct:** virtual
+- **Day 3, Sun 1 Nov:** in person, BodyRox Studio (Tuff House), Wuse 2, Abuja
+- **Admission:** free, for attendees and for vendor stalls
+- **Registration:** still routed to `https://selar.com/033882d1a2` to capture leads
+
+The countdown target lives in `js/countdown.js` line 7. It is currently set to
+09:00 WAT on 30 October 2026. Change that line if the virtual day opens at a
+different time.
+
+`images/events/wellness-chronicles.jpg` is no longer referenced; the Wellness
+Chronicles card was removed from the homepage events grid.
