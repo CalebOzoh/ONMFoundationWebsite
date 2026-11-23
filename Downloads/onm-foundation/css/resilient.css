@@ -146,3 +146,107 @@
 
 /* conference contact handles */
 .rw-handles{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;justify-content:center}
+
+/* =========================================================
+   2026 HYBRID FORMAT: three days, free admission, new venue
+   This stylesheet loads only on resilient-women.html, so
+   everything below is scoped to the conference page.
+   ========================================================= */
+
+/* anchors clear the fixed header */
+#about,#speakers,#experience,#format,#admission,#programme,#register,#faq,#community,#dress-code{scroll-margin-top:96px}
+.anchor-alias{display:block;height:0;scroll-margin-top:96px}
+
+/* free admission badge in the hero */
+.free-badge{
+  display:inline-block;margin:22px auto 0;
+  font-family:var(--display);font-weight:700;font-size:.9rem;
+  letter-spacing:.16em;text-transform:uppercase;
+  background:#fff;color:var(--rw-pink-deep);
+  padding:11px 26px;border-radius:999px;
+  box-shadow:0 10px 26px rgba(0,0,0,.18);
+}
+.cd-heading{
+  margin-top:40px;font-family:var(--display);font-weight:600;
+  font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(255,255,255,.88);
+}
+.countdown{margin-top:16px}
+
+/* three day cards */
+.rw-days{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rw-day{
+  background:#fff;border:1px solid var(--navy-08);
+  padding:32px 28px;display:flex;flex-direction:column;
+  border-top:4px solid var(--rw-yellow);
+}
+.rw-day.physical{border-top-color:var(--rw-pink)}
+.rw-day-tag{
+  align-self:flex-start;font-family:var(--display);font-weight:600;
+  font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:7px 13px;
+}
+.rw-day-tag.virtual{background:var(--rw-cream);color:var(--navy)}
+.rw-day-tag.inperson{background:var(--rw-pink);color:#fff}
+.rw-day-num{
+  margin-top:20px;font-family:var(--display);font-weight:600;
+  font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--navy-40);
+}
+.rw-day h3{margin-top:6px;font-size:1.3rem}
+.rw-day-focus{
+  margin-top:10px;font-family:var(--display);font-weight:700;
+  font-size:1rem;letter-spacing:.04em;color:var(--rw-pink-deep);
+}
+.rw-day p:last-child{margin-top:14px;font-size:.9rem;color:var(--navy-70);line-height:1.65}
+@media(max-width:900px){.rw-days{grid-template-columns:1fr}}
+
+/* venue block with map */
+.venue-block{
+  margin-top:40px;display:grid;grid-template-columns:1fr 1fr;
+  border:1px solid var(--navy-08);background:#fff;
+}
+.venue-copy{padding:clamp(28px,4vw,46px)}
+.venue-copy h3{margin-top:14px;font-size:1.6rem}
+.venue-address{
+  margin-top:8px;font-family:var(--display);font-weight:600;
+  font-size:.95rem;color:var(--rw-pink-deep);
+}
+.venue-copy p{margin-top:14px;font-size:.94rem;color:var(--navy-70);line-height:1.7}
+.venue-map{min-height:300px}
+.venue-map iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+@media(max-width:900px){.venue-block{grid-template-columns:1fr}.venue-map{min-height:260px}}
+
+/* three day programme */
+.prog-day{
+  margin-top:34px;padding:30px 32px;background:#fff;
+  border:1px solid var(--navy-08);border-left:4px solid var(--rw-yellow);
+}
+.prog-day.physical{border-left-color:var(--rw-pink)}
+.prog-day h3{font-size:1.05rem;line-height:1.5}
+.prog-theme{
+  margin-top:8px;font-family:var(--display);font-weight:700;
+  font-size:1.35rem;color:var(--rw-pink-deep);letter-spacing:.01em;
+}
+.prog-day .attend-list li{margin-bottom:11px}
+.prog-day .flow-table{border:1px solid var(--navy-08)}
+@media(max-width:620px){.prog-day{padding:24px 22px}}
+
+/* the Free price reads as a statement, not a number */
+.rw-tier .price{letter-spacing:-.01em}
+
+/* nav fits eight items without wrapping, and the CTA stays visible
+   against both the pink hero and the cream scrolled header */
+.rw-header .main-nav{gap:24px}
+.rw-header .main-nav a{white-space:nowrap}
+.rw-header .brand{white-space:nowrap}
+.rw-header.is-scrolled .nav-actions .btn-outline-light{
+  background:var(--rw-pink);border-color:var(--rw-pink);color:#fff;
+}
+.rw-header.is-scrolled .nav-actions .btn-outline-light:hover{
+  background:var(--rw-pink-deep);border-color:var(--rw-pink-deep);color:#fff;
+}
+@media(max-width:1180px){.rw-header .main-nav{gap:18px}.rw-header .main-nav a{font-size:.82rem}}
+
+/* the hero now carries two meta lines, so each needs its own row */
+.rw-hero .meta-line{display:block}
+.rw-hero .meta-line + .meta-line{font-size:.88rem;color:rgba(255,255,255,.82)}

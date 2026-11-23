@@ -2,8 +2,9 @@
 (function(){
   "use strict";
 
-  /* Countdown to 31 October 2026, 09:00 WAT (UTC+1) */
-  var target = new Date('2026-10-31T09:00:00+01:00').getTime();
+  /* Countdown to the conference opening: 30 October 2026, 09:00 WAT (UTC+1).
+     Change the time here if the virtual day starts later. */
+  var target = new Date('2026-10-30T09:00:00+01:00').getTime();
   var els = {
     d: document.getElementById('cdDays'),
     h: document.getElementById('cdHours'),
